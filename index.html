@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whack A Zombie</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+
+    <div class="loader-container">
+        <div class="loader">
+            <img src="./img/udin.png" alt="">
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="grid-container">
+            <div class="scoreboard">
+                <div class="scoreboard-text">
+                    <h2>Score: <span id="score">0</span> </h2>
+                </div>
+            </div>
+            <div class="box box-1">
+                <div class="hole hole-1">
+                    <div class="ollie"></div>
+                </div>
+            </div>
+            <div class="box box-2">
+                <div class="hole hole-2">
+                    <div class="ollie"></div>
+                </div>
+            </div>
+            <div class="box box-3">
+                <div class="hole hole-3">
+                    <div class="ollie"></div>
+                </div>
+            </div>
+            <div class="box box-4">
+                <div class="hole hole-4">
+                    <div class="ollie"></div>
+                </div>
+            </div>
+            <div class="box box-5">
+                <div class="hole hole-5">
+                    <div class="ollie"></div>
+                </div>
+            </div>
+            <div class="box box-6">
+                <div class="hole hole-6">
+                    <div class="ollie"></div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="showingMenu">
+        <div class="logo">
+            <img src="./img/logo.png" alt="">
+        </div>
+
+        <div class="container-menu">
+            <button class="btn btn--stripe" id="btnPlay">Play!</button>
+            <button class="btn btn--stripe" id="btn-readFirst" style="font-size: 8px;">Read First!!..</button>
+            <button style="opacity: 0.5;" id="myBtn" class="btn btn--stripe btn--radius">AboutMe</button>
+        
+            <!-- Trigger/Open The Modal myBtn -->
+
+            <!-- The Modal -->
+            <div id="readFirst" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span class="close">&times;</span>
+                        <h2>info</h2>
+                    </div>
+                    <div class="modal-body">
+                        <p>This mini-game dont have time limit, so u can whack ollie as much as u want ( ͡° ͜ʖ ͡°) (while waiting streaming start) :D</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Trigger/Open The Modal myBtn -->
+
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span class="close">&times;</span>
+                        <h2>About Me</h2>
+                    </div>
+                    <div class="modal-body">
+                        <p>Hello Zombrades, I make this just for fun. maybe u can play it while waiting for ollie stream to start ٩(◕‿◕)۶ </p>
+                        <p>
+                            You Can Check this game Source Code if you access my GitHub: <em>https://github.com/fransImanuel</em> 
+                            or I'd like to hear your opinion about this mini-game by mention/DM me on Twitter: <em>fransimanuel16</em> <br><br>
+                            <b>There is a little bug in this game you know, sorry for that because I'm still learning javascript, HTML, and CSS :D</b>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- <embed src="./audio/bgm.mp3" loop="true" autoplay autostart="true" width="180" height="90"> -->
+    <audio style="display:none;" controls loop id="music">
+        <source src="./audio/bgm.mp3"  type="audio/mp3">
+        If you are see this, it's mean Your browser does not support the audio element.
+    </audio>
+    <audio src="./audio/BONK_01.mp3" id="hitSound"></audio>
+
+<script src="./script/script.js"></script>
+</body>
+</html>
